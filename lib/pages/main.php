@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--    <link rel="preconnect" href="https://fonts.googleapis.com">-->
+    <!--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+    <!--    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">-->
+    <!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
+    <!-- <link rel="stylesheet" href="src/css/bootstrap.css"> -->
+    <link rel="stylesheet" type="text/css" href="src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/css/style.css">
+
+</head>
+
+<body>
+<div class="application row">
+    <div class="col-lg-8">
+        <div class="wide-container">
+            <div class="header">
+                <div class="header-logo">
+                    <a href="/" class="header-logo__link"><span class="text-uppercase">MSI 2020</span></a>
+                </div>
+            </div>
+            <div class="search-form">
+                <div class="form-title">
+                    <h1>Hey!</h1>
+                    <span class="subtitle">Let’s try to find a joke for you:</span>
+                </div>
+                <form class="joke__form">
+                    <label class="form-check">
+                        <input class="form-check-input search-options__item-input" checked type="radio" name="search-type" id="random">
+                        <span class="form-check-label" for="random">Random</span>
+                    </label>
+                    <label class="form-check">
+                        <input class="form-check-input search-options__item-input" type="radio" name="search-type" id="categories">
+                        <span class="form-check-label" for="categories">From categories</span>
+                        <ul class="categories-options hide">
+
+                        </ul>
+                    </label>
+                    <label class="form-check">
+                        <input class="form-check-input  search-options__item-input" type="radio" name="search-type" id="query">
+                        <span class="form-check-label" for="query">Search</span>
+                        <div>
+                            <input id="search-input" class="hide" placeholder="Free text search..." type="text">
+                        </div>
+                    </label>
+                </form>
+                <div class="search-button">
+                    <button id="submit-button">Get a joke</button>
+                </div>
+            </div>
+            <div class="joke-list-wrapper">
+                <div class="joke-list">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4" style="padding: 0;">
+        <div class="menu favourites">
+            <h2>Favourite</h2>
+            <div class="favourite-list">
+            </div>
+        </div>
+        <button class="hamburger">
+            <img class="menu-icon" src="src/img/hamburger.svg" alt="hamburger-open">
+            <img class="close-icon" src="src/img/cross.svg" alt="hamburger-close">
+        </button>
+    </div>
+    <div class="menu-shadow"></div>
+</div>
+<script src="src/js/script.js"></script>
+<script src="src/js/jquery.js" defer></script>
+<script src="src/js/popper.js" defer></script>
+<script src="menusrc/js/bootstrap.js" defer></script>
+<!--    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>-->
+<!--    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>-->
+<!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>-->
+</body>
+
+</html>
